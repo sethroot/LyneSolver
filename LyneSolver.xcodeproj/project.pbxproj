@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BE728BC1AA938DE007FF459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728BB1AA938DE007FF459 /* AppDelegate.swift */; };
+		4BE728BF1AA938DE007FF459 /* LyneSolver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728BD1AA938DE007FF459 /* LyneSolver.xcdatamodeld */; };
+		4BE728C11AA938DE007FF459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728C01AA938DE007FF459 /* ViewController.swift */; };
+		4BE728C41AA938DE007FF459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE728C21AA938DE007FF459 /* Main.storyboard */; };
+		4BE728C61AA938DE007FF459 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE728C51AA938DE007FF459 /* Images.xcassets */; };
+		4BE728C91AA938DE007FF459 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE728C71AA938DE007FF459 /* LaunchScreen.xib */; };
+		4BE728D51AA938DE007FF459 /* LyneSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728D41AA938DE007FF459 /* LyneSolverTests.swift */; };
+		4BE728E21AA93908007FF459 /* LyneSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728DF1AA93908007FF459 /* LyneSolver.swift */; };
+		4BE728E31AA93908007FF459 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E01AA93908007FF459 /* Matrix.swift */; };
+		4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E11AA93908007FF459 /* RoseTree.swift */; };
+		4BE728E61AA93A3E007FF459 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E51AA93A3E007FF459 /* Box.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BE728CF1AA938DE007FF459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BE728AE1AA938DE007FF459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BE728B51AA938DE007FF459;
+			remoteInfo = LyneSolver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BE728B61AA938DE007FF459 /* LyneSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyneSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE728BA1AA938DE007FF459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE728BB1AA938DE007FF459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BE728BE1AA938DE007FF459 /* LyneSolver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LyneSolver.xcdatamodel; sourceTree = "<group>"; };
+		4BE728C01AA938DE007FF459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BE728C31AA938DE007FF459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BE728C51AA938DE007FF459 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BE728C81AA938DE007FF459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4BE728CE1AA938DE007FF459 /* LyneSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyneSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE728D31AA938DE007FF459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE728D41AA938DE007FF459 /* LyneSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyneSolverTests.swift; sourceTree = "<group>"; };
+		4BE728DF1AA93908007FF459 /* LyneSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyneSolver.swift; sourceTree = "<group>"; };
+		4BE728E01AA93908007FF459 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		4BE728E11AA93908007FF459 /* RoseTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoseTree.swift; sourceTree = "<group>"; };
+		4BE728E51AA93A3E007FF459 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BE728B31AA938DE007FF459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BE728CB1AA938DE007FF459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BE728AD1AA938DE007FF459 = {
+			isa = PBXGroup;
+			children = (
+				4BE728B81AA938DE007FF459 /* LyneSolver */,
+				4BE728D11AA938DE007FF459 /* LyneSolverTests */,
+				4BE728B71AA938DE007FF459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BE728B71AA938DE007FF459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728B61AA938DE007FF459 /* LyneSolver.app */,
+				4BE728CE1AA938DE007FF459 /* LyneSolverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BE728B81AA938DE007FF459 /* LyneSolver */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728DE1AA938E6007FF459 /* Classes */,
+				4BE728BB1AA938DE007FF459 /* AppDelegate.swift */,
+				4BE728C01AA938DE007FF459 /* ViewController.swift */,
+				4BE728C21AA938DE007FF459 /* Main.storyboard */,
+				4BE728C51AA938DE007FF459 /* Images.xcassets */,
+				4BE728C71AA938DE007FF459 /* LaunchScreen.xib */,
+				4BE728BD1AA938DE007FF459 /* LyneSolver.xcdatamodeld */,
+				4BE728B91AA938DE007FF459 /* Supporting Files */,
+			);
+			path = LyneSolver;
+			sourceTree = "<group>";
+		};
+		4BE728B91AA938DE007FF459 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728BA1AA938DE007FF459 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BE728D11AA938DE007FF459 /* LyneSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728D41AA938DE007FF459 /* LyneSolverTests.swift */,
+				4BE728D21AA938DE007FF459 /* Supporting Files */,
+			);
+			path = LyneSolverTests;
+			sourceTree = "<group>";
+		};
+		4BE728D21AA938DE007FF459 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728D31AA938DE007FF459 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BE728DE1AA938E6007FF459 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BE728DF1AA93908007FF459 /* LyneSolver.swift */,
+				4BE728E01AA93908007FF459 /* Matrix.swift */,
+				4BE728E11AA93908007FF459 /* RoseTree.swift */,
+				4BE728E51AA93A3E007FF459 /* Box.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BE728B51AA938DE007FF459 /* LyneSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BE728D81AA938DE007FF459 /* Build configuration list for PBXNativeTarget "LyneSolver" */;
+			buildPhases = (
+				4BE728B21AA938DE007FF459 /* Sources */,
+				4BE728B31AA938DE007FF459 /* Frameworks */,
+				4BE728B41AA938DE007FF459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyneSolver;
+			productName = LyneSolver;
+			productReference = 4BE728B61AA938DE007FF459 /* LyneSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BE728CD1AA938DE007FF459 /* LyneSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BE728DB1AA938DE007FF459 /* Build configuration list for PBXNativeTarget "LyneSolverTests" */;
+			buildPhases = (
+				4BE728CA1AA938DE007FF459 /* Sources */,
+				4BE728CB1AA938DE007FF459 /* Frameworks */,
+				4BE728CC1AA938DE007FF459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BE728D01AA938DE007FF459 /* PBXTargetDependency */,
+			);
+			name = LyneSolverTests;
+			productName = LyneSolverTests;
+			productReference = 4BE728CE1AA938DE007FF459 /* LyneSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BE728AE1AA938DE007FF459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Seth Root";
+				TargetAttributes = {
+					4BE728B51AA938DE007FF459 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4BE728CD1AA938DE007FF459 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4BE728B51AA938DE007FF459;
+					};
+				};
+			};
+			buildConfigurationList = 4BE728B11AA938DE007FF459 /* Build configuration list for PBXProject "LyneSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BE728AD1AA938DE007FF459;
+			productRefGroup = 4BE728B71AA938DE007FF459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BE728B51AA938DE007FF459 /* LyneSolver */,
+				4BE728CD1AA938DE007FF459 /* LyneSolverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BE728B41AA938DE007FF459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE728C41AA938DE007FF459 /* Main.storyboard in Resources */,
+				4BE728C91AA938DE007FF459 /* LaunchScreen.xib in Resources */,
+				4BE728C61AA938DE007FF459 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BE728CC1AA938DE007FF459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BE728B21AA938DE007FF459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE728C11AA938DE007FF459 /* ViewController.swift in Sources */,
+				4BE728E61AA93A3E007FF459 /* Box.swift in Sources */,
+				4BE728E31AA93908007FF459 /* Matrix.swift in Sources */,
+				4BE728BF1AA938DE007FF459 /* LyneSolver.xcdatamodeld in Sources */,
+				4BE728E21AA93908007FF459 /* LyneSolver.swift in Sources */,
+				4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */,
+				4BE728BC1AA938DE007FF459 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BE728CA1AA938DE007FF459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE728D51AA938DE007FF459 /* LyneSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BE728D01AA938DE007FF459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BE728B51AA938DE007FF459 /* LyneSolver */;
+			targetProxy = 4BE728CF1AA938DE007FF459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BE728C21AA938DE007FF459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BE728C31AA938DE007FF459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BE728C71AA938DE007FF459 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BE728C81AA938DE007FF459 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BE728D61AA938DE007FF459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BE728D71AA938DE007FF459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BE728D91AA938DE007FF459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LyneSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BE728DA1AA938DE007FF459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LyneSolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4BE728DC1AA938DE007FF459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LyneSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyneSolver.app/LyneSolver";
+			};
+			name = Debug;
+		};
+		4BE728DD1AA938DE007FF459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LyneSolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyneSolver.app/LyneSolver";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BE728B11AA938DE007FF459 /* Build configuration list for PBXProject "LyneSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE728D61AA938DE007FF459 /* Debug */,
+				4BE728D71AA938DE007FF459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BE728D81AA938DE007FF459 /* Build configuration list for PBXNativeTarget "LyneSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE728D91AA938DE007FF459 /* Debug */,
+				4BE728DA1AA938DE007FF459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BE728DB1AA938DE007FF459 /* Build configuration list for PBXNativeTarget "LyneSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE728DC1AA938DE007FF459 /* Debug */,
+				4BE728DD1AA938DE007FF459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4BE728BD1AA938DE007FF459 /* LyneSolver.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BE728BE1AA938DE007FF459 /* LyneSolver.xcdatamodel */,
+			);
+			currentVersion = 4BE728BE1AA938DE007FF459 /* LyneSolver.xcdatamodel */;
+			path = LyneSolver.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4BE728AE1AA938DE007FF459 /* Project object */;
+}

@@ -41,10 +41,10 @@ class LyneSolver {
         
         println(board.description)
         
-        // Find start node
+        // Find Address of Node.Start
         if let startNode:Address = addressessForNode(board, node: Node.Start) {
             
-            // Initialize matrix to track which nodes have been processed
+            // Initialize Matrix of Bools to track which nodes have been processed
             var processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
             
             // Generate a RoseTree of Directions with Node.Start as the root

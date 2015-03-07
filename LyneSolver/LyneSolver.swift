@@ -31,7 +31,10 @@ class LyneSolver {
     
     func main() {
         solveBoard(board1);
+        println()
+        
         solveBoard(board2);
+        println()
     }
     
     func solveBoard(board:Board) {
@@ -55,15 +58,11 @@ class LyneSolver {
                 println(path)
             }
             
-            println()
-            
         } else {
             NSLog("Error! Could not find starting node on the board")
         }
     }
     
-    
-
     func findTreesForNode(board:Board, address:Address, var processed:Processed) -> [Box<DirTree>] {
         let (row, col) = (address.row, address.col)
         processed[row, col] = true
@@ -103,7 +102,4 @@ class LyneSolver {
         
         return nil
     }
-
-    
-    
 }

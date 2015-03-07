@@ -15,4 +15,4 @@ typealias AddressMod = (Int -> Int)
 typealias DirTree = RoseTree<(Direction)>
 typealias DirMatrix = [[Direction]]
 typealias DirList = [Direction]
-typealias DirModTriple = (Direction, AddressMod, AddressMod)
+typealias DirModTriple = (direction: Direction, modRow: AddressMod, modCol: AddressMod)

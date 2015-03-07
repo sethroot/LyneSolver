@@ -67,6 +67,7 @@ class LyneSolver {
                 }
             }
             
+            // Filter paths that are not the correct lenght
             var lengthFiltered = paths.filter {$0.count == nodeCount}
             println("Correct length: ")
             
@@ -75,6 +76,7 @@ class LyneSolver {
             }
             println()
             
+            // Filter paths that do not end on Node.End
             var endAddress = addressessForNode(board, node: Node.End)
             var endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
             println("Correct end: ")

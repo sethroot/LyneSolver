@@ -33,8 +33,8 @@ class LyneSolver {
         solveBoard(board1);
         println()
         
-//        solveBoard(board2);
-//        println()
+        solveBoard(board2);
+        println()
     }
     
     func solveBoard(board:Board) {
@@ -73,8 +73,10 @@ class LyneSolver {
             for path in lengthFiltered {
                 println(path)
             }
+            println()
             
-            var endFiltered = lengthFiltered.filter {self.endIsEnd($0)}
+            var endAddress = addressessForNode(board, node: Node.End)
+            var endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
             println("Correct end: ")
             
             for path in endFiltered {
@@ -126,18 +128,18 @@ class LyneSolver {
         return nil
     }
     
-    func endIsEnd(dirs:DirList) -> Bool {
-        if let startNode:Address = addressessForNode(board1, node: Node.Start) {
-            var current:Address = startNode;
+    func addressAtPathEnd(board:Board, dirs:DirList) -> Address? {
+        var node:Address;
+        
+        if let startNode:Address = addressessForNode(board, node: Node.Start) {
+            node = startNode
             for dir in dirs {
                 var triple:DirModTriple = directions.filter {$0.direction == dir}[0]
-                println(triple)
-                current = current.translate(triple.modRow, triple.modCol)
-                println(current)
+                node = node.translate(triple.modRow, triple.modCol)
             }
-            return current == addressessForNode(board1, node: Node.End)
+            return node;
         }
         
-        return false;
+        return nil;
     }
 }

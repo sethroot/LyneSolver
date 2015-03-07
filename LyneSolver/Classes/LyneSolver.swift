@@ -48,7 +48,7 @@ class LyneSolver {
             var processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
             
             // Generate a RoseTree of Directions with Node.Start as the root
-            let trees:[Box<DirTree>] = findTreesForNode(board, address:startNode, processed:processed)
+            let trees:[Box<DirTree>] = treesForNode(board, address:startNode, processed:processed)
             
             // Flatten each tree and accumulate
             var paths:DirMatrix = []
@@ -90,7 +90,7 @@ class LyneSolver {
         }
     }
     
-    func findTreesForNode(board:Board, address:Address, var processed:Processed) -> [Box<DirTree>] {
+    func treesForNode(board:Board, address:Address, var processed:Processed) -> [Box<DirTree>] {
         let (row, col) = (address.row, address.col)
         processed[row, col] = true
         
@@ -104,7 +104,7 @@ class LyneSolver {
             let neighborNode:Address = address.translate(modRow, modCol: modCol)
             
             return nodeExists(neighborNode) && !processed[neighborNode.row, neighborNode.col] ?
-                findTreesForNode(board, address: neighborNode, processed: processed) : nil;
+                treesForNode(board, address: neighborNode, processed: processed) : nil;
         }
         
         var trees:[Box<DirTree>] = []

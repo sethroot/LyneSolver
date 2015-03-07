@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+enum Direction : String, Printable {
+    case Up = "up"
+    case Down = "down"
+    case Left = "left"
+    case Right = "right"
+    case UpLeft = "upLeft"
+    case UpRight = "upRight"
+    case DownLeft = "downLeft"
+    case DownRight = "downRight"
+    
+    var description: String {
+        return self.rawValue
+    }
+}

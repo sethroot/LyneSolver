@@ -18,6 +18,11 @@
 		4BE728E31AA93908007FF459 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E01AA93908007FF459 /* Matrix.swift */; };
 		4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E11AA93908007FF459 /* RoseTree.swift */; };
 		4BE728E61AA93A3E007FF459 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E51AA93A3E007FF459 /* Box.swift */; };
+		4BE728E81AAB4EED007FF459 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E71AAB4EED007FF459 /* Direction.swift */; };
+		4BE728EA1AAB5257007FF459 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E91AAB5257007FF459 /* Node.swift */; };
+		4BE728EC1AAB528E007FF459 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728EB1AAB528E007FF459 /* Address.swift */; };
+		4BE728EE1AAB52D1007FF459 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728ED1AAB52D1007FF459 /* Aliases.swift */; };
+		4BE728F01AAB52FC007FF459 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728EF1AAB52FC007FF459 /* Boards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		4BE728E01AA93908007FF459 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		4BE728E11AA93908007FF459 /* RoseTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoseTree.swift; sourceTree = "<group>"; };
 		4BE728E51AA93A3E007FF459 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		4BE728E71AAB4EED007FF459 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		4BE728E91AAB5257007FF459 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		4BE728EB1AAB528E007FF459 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		4BE728ED1AAB52D1007FF459 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
+		4BE728EF1AAB52FC007FF459 /* Boards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,11 @@
 				4BE728E01AA93908007FF459 /* Matrix.swift */,
 				4BE728E11AA93908007FF459 /* RoseTree.swift */,
 				4BE728E51AA93A3E007FF459 /* Box.swift */,
+				4BE728E71AAB4EED007FF459 /* Direction.swift */,
+				4BE728E91AAB5257007FF459 /* Node.swift */,
+				4BE728EB1AAB528E007FF459 /* Address.swift */,
+				4BE728ED1AAB52D1007FF459 /* Aliases.swift */,
+				4BE728EF1AAB52FC007FF459 /* Boards.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -237,7 +252,12 @@
 			files = (
 				4BE728C11AA938DE007FF459 /* ViewController.swift in Sources */,
 				4BE728E61AA93A3E007FF459 /* Box.swift in Sources */,
+				4BE728F01AAB52FC007FF459 /* Boards.swift in Sources */,
 				4BE728E31AA93908007FF459 /* Matrix.swift in Sources */,
+				4BE728EE1AAB52D1007FF459 /* Aliases.swift in Sources */,
+				4BE728EA1AAB5257007FF459 /* Node.swift in Sources */,
+				4BE728EC1AAB528E007FF459 /* Address.swift in Sources */,
+				4BE728E81AAB4EED007FF459 /* Direction.swift in Sources */,
 				4BE728BF1AA938DE007FF459 /* LyneSolver.xcdatamodeld in Sources */,
 				4BE728E21AA93908007FF459 /* LyneSolver.swift in Sources */,
 				4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */,
@@ -433,6 +453,7 @@
 				4BE728DA1AA938DE007FF459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BE728DB1AA938DE007FF459 /* Build configuration list for PBXNativeTarget "LyneSolverTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +462,7 @@
 				4BE728DD1AA938DE007FF459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

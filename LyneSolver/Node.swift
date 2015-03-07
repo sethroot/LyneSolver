@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+enum Node : String, Printable {
+    case Empty = "_"
+    case Start = "S"
+    case Node = "o"
+    case End = "E"
+    
+    var description: String {
+        return self.rawValue
+    }
+}

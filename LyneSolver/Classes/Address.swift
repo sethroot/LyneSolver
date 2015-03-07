@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Address : Printable {
-    let row:Int, col:Int
+struct Address : Equatable, Printable {
+    public let row:Int, col:Int
     var description: String {
         return "(\(row.description), \(col.description))"
     }
@@ -20,4 +20,7 @@ struct Address : Printable {
     func translate(modRow:AddressMod, modCol:AddressMod) -> Address {
         return Address(row:modRow(self.row), col:modCol(self.col))
     }
+}
+func ==(lhs: Address, rhs: Address) -> Bool {
+    return lhs.row == rhs.row && lhs.col == rhs.col
 }

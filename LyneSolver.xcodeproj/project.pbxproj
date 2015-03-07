@@ -14,15 +14,15 @@
 		4BE728C61AA938DE007FF459 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE728C51AA938DE007FF459 /* Images.xcassets */; };
 		4BE728C91AA938DE007FF459 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE728C71AA938DE007FF459 /* LaunchScreen.xib */; };
 		4BE728D51AA938DE007FF459 /* LyneSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728D41AA938DE007FF459 /* LyneSolverTests.swift */; };
-		4BE728E21AA93908007FF459 /* LyneSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728DF1AA93908007FF459 /* LyneSolver.swift */; };
-		4BE728E31AA93908007FF459 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E01AA93908007FF459 /* Matrix.swift */; };
-		4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E11AA93908007FF459 /* RoseTree.swift */; };
-		4BE728E61AA93A3E007FF459 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E51AA93A3E007FF459 /* Box.swift */; };
-		4BE728E81AAB4EED007FF459 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E71AAB4EED007FF459 /* Direction.swift */; };
-		4BE728EA1AAB5257007FF459 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728E91AAB5257007FF459 /* Node.swift */; };
-		4BE728EC1AAB528E007FF459 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728EB1AAB528E007FF459 /* Address.swift */; };
-		4BE728EE1AAB52D1007FF459 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728ED1AAB52D1007FF459 /* Aliases.swift */; };
-		4BE728F01AAB52FC007FF459 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728EF1AAB52FC007FF459 /* Boards.swift */; };
+		4BE728FA1AAB5C75007FF459 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F11AAB5C75007FF459 /* Address.swift */; };
+		4BE728FB1AAB5C75007FF459 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F21AAB5C75007FF459 /* Aliases.swift */; };
+		4BE728FC1AAB5C75007FF459 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F31AAB5C75007FF459 /* Boards.swift */; };
+		4BE728FD1AAB5C75007FF459 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F41AAB5C75007FF459 /* Box.swift */; };
+		4BE728FE1AAB5C75007FF459 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F51AAB5C75007FF459 /* Direction.swift */; };
+		4BE728FF1AAB5C75007FF459 /* LyneSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F61AAB5C75007FF459 /* LyneSolver.swift */; };
+		4BE729001AAB5C75007FF459 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F71AAB5C75007FF459 /* Matrix.swift */; };
+		4BE729011AAB5C75007FF459 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F81AAB5C75007FF459 /* Node.swift */; };
+		4BE729021AAB5C75007FF459 /* RoseTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F91AAB5C75007FF459 /* RoseTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,15 +47,15 @@
 		4BE728CE1AA938DE007FF459 /* LyneSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyneSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE728D31AA938DE007FF459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BE728D41AA938DE007FF459 /* LyneSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyneSolverTests.swift; sourceTree = "<group>"; };
-		4BE728DF1AA93908007FF459 /* LyneSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyneSolver.swift; sourceTree = "<group>"; };
-		4BE728E01AA93908007FF459 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		4BE728E11AA93908007FF459 /* RoseTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoseTree.swift; sourceTree = "<group>"; };
-		4BE728E51AA93A3E007FF459 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		4BE728E71AAB4EED007FF459 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		4BE728E91AAB5257007FF459 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		4BE728EB1AAB528E007FF459 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		4BE728ED1AAB52D1007FF459 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
-		4BE728EF1AAB52FC007FF459 /* Boards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boards.swift; sourceTree = "<group>"; };
+		4BE728F11AAB5C75007FF459 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Classes/Address.swift; sourceTree = "<group>"; };
+		4BE728F21AAB5C75007FF459 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = Classes/Aliases.swift; sourceTree = "<group>"; };
+		4BE728F31AAB5C75007FF459 /* Boards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Boards.swift; path = Classes/Boards.swift; sourceTree = "<group>"; };
+		4BE728F41AAB5C75007FF459 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Classes/Box.swift; sourceTree = "<group>"; };
+		4BE728F51AAB5C75007FF459 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Classes/Direction.swift; sourceTree = "<group>"; };
+		4BE728F61AAB5C75007FF459 /* LyneSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LyneSolver.swift; path = Classes/LyneSolver.swift; sourceTree = "<group>"; };
+		4BE728F71AAB5C75007FF459 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = Classes/Matrix.swift; sourceTree = "<group>"; };
+		4BE728F81AAB5C75007FF459 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Classes/Node.swift; sourceTree = "<group>"; };
+		4BE728F91AAB5C75007FF459 /* RoseTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoseTree.swift; path = Classes/RoseTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,15 +137,15 @@
 		4BE728DE1AA938E6007FF459 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4BE728DF1AA93908007FF459 /* LyneSolver.swift */,
-				4BE728E01AA93908007FF459 /* Matrix.swift */,
-				4BE728E11AA93908007FF459 /* RoseTree.swift */,
-				4BE728E51AA93A3E007FF459 /* Box.swift */,
-				4BE728E71AAB4EED007FF459 /* Direction.swift */,
-				4BE728E91AAB5257007FF459 /* Node.swift */,
-				4BE728EB1AAB528E007FF459 /* Address.swift */,
-				4BE728ED1AAB52D1007FF459 /* Aliases.swift */,
-				4BE728EF1AAB52FC007FF459 /* Boards.swift */,
+				4BE728F11AAB5C75007FF459 /* Address.swift */,
+				4BE728F21AAB5C75007FF459 /* Aliases.swift */,
+				4BE728F31AAB5C75007FF459 /* Boards.swift */,
+				4BE728F41AAB5C75007FF459 /* Box.swift */,
+				4BE728F51AAB5C75007FF459 /* Direction.swift */,
+				4BE728F61AAB5C75007FF459 /* LyneSolver.swift */,
+				4BE728F71AAB5C75007FF459 /* Matrix.swift */,
+				4BE728F81AAB5C75007FF459 /* Node.swift */,
+				4BE728F91AAB5C75007FF459 /* RoseTree.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -250,17 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE728FB1AAB5C75007FF459 /* Aliases.swift in Sources */,
+				4BE728FF1AAB5C75007FF459 /* LyneSolver.swift in Sources */,
+				4BE728FD1AAB5C75007FF459 /* Box.swift in Sources */,
+				4BE729011AAB5C75007FF459 /* Node.swift in Sources */,
 				4BE728C11AA938DE007FF459 /* ViewController.swift in Sources */,
-				4BE728E61AA93A3E007FF459 /* Box.swift in Sources */,
-				4BE728F01AAB52FC007FF459 /* Boards.swift in Sources */,
-				4BE728E31AA93908007FF459 /* Matrix.swift in Sources */,
-				4BE728EE1AAB52D1007FF459 /* Aliases.swift in Sources */,
-				4BE728EA1AAB5257007FF459 /* Node.swift in Sources */,
-				4BE728EC1AAB528E007FF459 /* Address.swift in Sources */,
-				4BE728E81AAB4EED007FF459 /* Direction.swift in Sources */,
+				4BE728FE1AAB5C75007FF459 /* Direction.swift in Sources */,
+				4BE728FC1AAB5C75007FF459 /* Boards.swift in Sources */,
+				4BE729001AAB5C75007FF459 /* Matrix.swift in Sources */,
 				4BE728BF1AA938DE007FF459 /* LyneSolver.xcdatamodeld in Sources */,
-				4BE728E21AA93908007FF459 /* LyneSolver.swift in Sources */,
-				4BE728E41AA93908007FF459 /* RoseTree.swift in Sources */,
+				4BE728FA1AAB5C75007FF459 /* Address.swift in Sources */,
+				4BE729021AAB5C75007FF459 /* RoseTree.swift in Sources */,
 				4BE728BC1AA938DE007FF459 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

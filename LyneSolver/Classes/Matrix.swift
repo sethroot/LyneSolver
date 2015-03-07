@@ -10,7 +10,7 @@ import Foundation
 
 struct Matrix<T:Printable> : Printable {
     let rows: Int, columns: Int
-    var grid: [T]
+    public var grid: [T]
     var description: String {
         var desc:String = "["
         for var i=0; i<self.rows; i++ {

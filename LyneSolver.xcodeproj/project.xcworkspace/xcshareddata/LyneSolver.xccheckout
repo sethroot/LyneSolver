@@ -10,14 +10,14 @@
 	<string>LyneSolver</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9CEEDA55495E3CB3AC731AC2B588DE97D7D7F608</key>
+		<key>D588EA2B0774F70DF38DB483F2C994762D18BDE1</key>
 		<string>github.com:sethroot/LyneSolver.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LyneSolver.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9CEEDA55495E3CB3AC731AC2B588DE97D7D7F608</key>
+		<key>D588EA2B0774F70DF38DB483F2C994762D18BDE1</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9CEEDA55495E3CB3AC731AC2B588DE97D7D7F608</string>
+	<string>D588EA2B0774F70DF38DB483F2C994762D18BDE1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9CEEDA55495E3CB3AC731AC2B588DE97D7D7F608</string>
+			<string>D588EA2B0774F70DF38DB483F2C994762D18BDE1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LyneSolver</string>
 		</dict>

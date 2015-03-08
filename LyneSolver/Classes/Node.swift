@@ -9,7 +9,7 @@
 import Foundation
 
 enum Node : String, Printable {
-    case Empty = "_"
+    case Empty = "ˍ"
     case Start = "S"
     case Node = "o"
     case End = "E"

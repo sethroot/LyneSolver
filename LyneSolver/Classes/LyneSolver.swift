@@ -39,7 +39,9 @@ class LyneSolver {
     
     func solveBoard(board:Board) {
         
+        println("Input:")
         println(board.description)
+        println()
         
         // Find Address of Node.Start
         if let startNode:Address = addressessForNode(board, node: Node.Start) {
@@ -54,6 +56,7 @@ class LyneSolver {
             var paths:DirMatrix = []
             trees.map {paths += $0.value.flatten()}
             
+            println("All paths:")
             for path in paths {
                 println(path)
             }
@@ -69,7 +72,7 @@ class LyneSolver {
             
             // Filter paths that are not the correct lenght
             var lengthFiltered = paths.filter {$0.count == nodeCount}
-            println("Correct length: ")
+            println("Filtered for length: ")
             
             for path in lengthFiltered {
                 println(path)
@@ -79,7 +82,7 @@ class LyneSolver {
             // Filter paths that do not end on Node.End
             var endAddress = addressessForNode(board, node: Node.End)
             var endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
-            println("Correct end: ")
+            println("Solutions: ")
             
             for path in endFiltered {
                 println(path)

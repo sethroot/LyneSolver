@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Address : Equatable, Printable {
-    public let row:Int, col:Int
+struct Address : Equatable, CustomStringConvertible {
+    internal let row:Int, col:Int
     var description: String {
         return "(\(row.description), \(col.description))"
     }

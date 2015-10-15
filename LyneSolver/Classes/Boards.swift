@@ -15,7 +15,7 @@ let E = Node.End;
 
 var board1:Board {
     
-    var board = [
+    let board = [
         [ˍ, ˍ, ˍ, ˍ],
         [S, ˍ, ˍ, E],
         [o, o, o, o],
@@ -26,7 +26,7 @@ var board1:Board {
 
 var board2:Board {
     
-    var board = [
+    let board = [
         [S,ˍ,ˍ,ˍ,ˍ,ˍ],
         [ˍ,o,ˍ,ˍ,ˍ,ˍ],
         [ˍ,o,o,ˍ,ˍ,ˍ],

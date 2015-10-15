@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Matrix<T:Printable> : Printable {
+struct Matrix<T:CustomStringConvertible> : CustomStringConvertible {
     
     let rows: Int, columns: Int
     

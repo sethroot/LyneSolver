@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc
+
 class LyneSolver {
     
     var directions:[DirModTriple] {
@@ -31,23 +31,23 @@ class LyneSolver {
     
     func main() {
         solveBoard(board1);
-        println()
+        print("")
         
         solveBoard(board2);
-        println()
+        print("")
     }
     
     func solveBoard(board:Board) {
         
-        println("Input:")
-        println(board.description)
-        println()
+        print("Input:")
+        print(board.description)
+        print("")
         
         // Find Address of Node.Start
         if let startNode:Address = addressessForNode(board, node: Node.Start) {
             
             // Initialize Matrix of Bools to track which nodes have been processed
-            var processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
+            let processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
             
             // Generate a RoseTree of Directions with Node.Start as the root
             let trees:[Box<DirTree>] = treesForNode(board, address:startNode, processed:processed)
@@ -56,11 +56,11 @@ class LyneSolver {
             var paths:DirMatrix = []
             trees.map {paths += $0.value.flatten()}
             
-            println("All paths:")
+            print("All paths:")
             for path in paths {
-                println(path)
+                print(path)
             }
-            println()
+            print("")
             
             // Count nodes
             var nodeCount:Int = 0;
@@ -71,21 +71,21 @@ class LyneSolver {
             }
             
             // Filter paths that are not the correct lenght
-            var lengthFiltered = paths.filter {$0.count == nodeCount}
-            println("Filtered for length: ")
+            let lengthFiltered = paths.filter {$0.count == nodeCount}
+            print("Filtered for length: ")
             
             for path in lengthFiltered {
-                println(path)
+                print(path)
             }
-            println()
+            print("")
             
             // Filter paths that do not end on Node.End
-            var endAddress = addressessForNode(board, node: Node.End)
-            var endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
-            println("Solutions: ")
+            let endAddress = addressessForNode(board, node: Node.End)
+            let endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
+            print("Solutions: ")
             
             for path in endFiltered {
-                println(path)
+                print(path)
             }
             
         } else {
@@ -112,7 +112,7 @@ class LyneSolver {
         
         var trees:[Box<DirTree>] = []
         for (direction, modRow, modCol) in directions {
-            if let paths = generatePaths(modRow, modCol) {
+            if let paths = generatePaths(modRow, modCol: modCol) {
                 trees.append(Box(RoseTree.Node(Box(direction), paths)))
             }
         }
@@ -139,8 +139,8 @@ class LyneSolver {
         if let startNode:Address = addressessForNode(board, node: Node.Start) {
             node = startNode
             for dir in dirs {
-                var triple:DirModTriple = directions.filter {$0.direction == dir}[0]
-                node = node.translate(triple.modRow, triple.modCol)
+                let triple:DirModTriple = directions.filter {$0.direction == dir}[0]
+                node = node.translate(triple.modRow, modCol: triple.modCol)
             }
             return node;
         }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Direction : String, Printable {
+enum Direction : String, CustomStringConvertible {
     case Up = "up"
     case Down = "down"
     case Left = "left"

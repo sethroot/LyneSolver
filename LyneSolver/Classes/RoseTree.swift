@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum RoseTree<T> : Printable {
+enum RoseTree<T> : CustomStringConvertible {
     case Node (Box<T>, [Box<RoseTree<T>>])
     
     var description: String {
@@ -46,7 +46,7 @@ enum RoseTree<T> : Printable {
                     leaf!.insert(val.value, atIndex: 0);
                     acc2.insert(leaf!, atIndex: 0)
                 } else {
-                    for (index, dir) in enumerate(acc2) {
+                    for (index, dir) in acc2.enumerate() {
                         acc2[index].insert(val.value, atIndex: 0)
                     }
                 }

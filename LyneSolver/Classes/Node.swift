@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Node : String, Printable {
+enum Node : String, CustomStringConvertible {
     case Empty = "ˍ"
     case Start = "S"
     case Node = "o"

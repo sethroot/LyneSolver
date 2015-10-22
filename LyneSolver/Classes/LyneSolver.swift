@@ -72,7 +72,7 @@ class LyneSolver {
                 }
             }
             
-            // Filter paths that are not the correct lenght
+            // Filter paths that are not the correct length
             let lengthFiltered = paths.filter {$0.count == nodeCount}
             print("Filtered for length: ")
             
@@ -96,25 +96,15 @@ class LyneSolver {
     }
     
     func treesForNode(board:Board, addr:Address, var processed:Processed) -> [RoseTree<Direction>] {
-        let (row, col) = (addr.row, addr.col)
+        processed[addr.row, addr.col] = true
         
-        processed[row, col] = true
-        
-        func generatePaths(modRow:AddressMod, modCol:AddressMod) -> [RoseTree<Direction>]? {
-            let neighborNode:Address = addr.translate(modRow, modCol: modCol)
-            
-            if nodeExists(board, addr:neighborNode) && !processed[neighborNode.row, neighborNode.col] {
-                return treesForNode(board, addr: neighborNode, processed: processed)
-            } else {
-                return nil
-            }
-        }
-
         var trees:[RoseTree<Direction>] = []
         
         for (direction, modRow, modCol) in directions {
-            if let paths = generatePaths(modRow, modCol: modCol) {
-                trees.append(RoseTree.Node(direction, paths))
+            let neighborNode = addr.translate(modRow, modCol: modCol)
+            
+            if nodeExists(board, addr: neighborNode) && !processed[neighborNode.row, neighborNode.col] {
+                trees.append(RoseTree.Node(direction, treesForNode(board, addr: neighborNode, processed: processed)))
             }
         }
         

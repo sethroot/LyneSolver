@@ -49,10 +49,9 @@ enum RoseTree<T> : CustomStringConvertible {
                 var treeAcc:[[T]] = [];
                 
                 // Recursively flatten the tree using the new accumulator
-                // We only need to know if the recursion produced a leaf
                 let (_, leaf) = flattenHelper(tree, acc:&treeAcc)
                 
-                // If it did
+                // If the recursion produced a leaf
                 if var leaf = leaf {
                     
                     // Insert the value of this node at the 0 position
@@ -62,12 +61,13 @@ enum RoseTree<T> : CustomStringConvertible {
                     treeAcc.insert(leaf, atIndex: 0)
                 } else {
                     
-                    // Otherwise add the value of this node to each subtree that was
+                    // Otherwise add the value of this node to each subtree that was created
                     for (index, _) in treeAcc.enumerate() {
                         treeAcc[index].insert(val, atIndex: 0)
                     }
                 }
                 
+                // Append the tree accumulator to the parameter accumulator
                 acc += treeAcc
             }
         }

@@ -17,7 +17,6 @@
 		4BE728FA1AAB5C75007FF459 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F11AAB5C75007FF459 /* Address.swift */; };
 		4BE728FB1AAB5C75007FF459 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F21AAB5C75007FF459 /* Aliases.swift */; };
 		4BE728FC1AAB5C75007FF459 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F31AAB5C75007FF459 /* Boards.swift */; };
-		4BE728FD1AAB5C75007FF459 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F41AAB5C75007FF459 /* Box.swift */; };
 		4BE728FE1AAB5C75007FF459 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F51AAB5C75007FF459 /* Direction.swift */; };
 		4BE728FF1AAB5C75007FF459 /* LyneSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F61AAB5C75007FF459 /* LyneSolver.swift */; };
 		4BE729001AAB5C75007FF459 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE728F71AAB5C75007FF459 /* Matrix.swift */; };
@@ -50,7 +49,6 @@
 		4BE728F11AAB5C75007FF459 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Classes/Address.swift; sourceTree = "<group>"; };
 		4BE728F21AAB5C75007FF459 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = Classes/Aliases.swift; sourceTree = "<group>"; };
 		4BE728F31AAB5C75007FF459 /* Boards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Boards.swift; path = Classes/Boards.swift; sourceTree = "<group>"; };
-		4BE728F41AAB5C75007FF459 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Classes/Box.swift; sourceTree = "<group>"; };
 		4BE728F51AAB5C75007FF459 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Classes/Direction.swift; sourceTree = "<group>"; };
 		4BE728F61AAB5C75007FF459 /* LyneSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LyneSolver.swift; path = Classes/LyneSolver.swift; sourceTree = "<group>"; };
 		4BE728F71AAB5C75007FF459 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = Classes/Matrix.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				4BE728F11AAB5C75007FF459 /* Address.swift */,
 				4BE728F21AAB5C75007FF459 /* Aliases.swift */,
 				4BE728F31AAB5C75007FF459 /* Boards.swift */,
-				4BE728F41AAB5C75007FF459 /* Box.swift */,
 				4BE728F51AAB5C75007FF459 /* Direction.swift */,
 				4BE728F61AAB5C75007FF459 /* LyneSolver.swift */,
 				4BE728F71AAB5C75007FF459 /* Matrix.swift */,
@@ -255,7 +252,6 @@
 			files = (
 				4BE728FB1AAB5C75007FF459 /* Aliases.swift in Sources */,
 				4BE728FF1AAB5C75007FF459 /* LyneSolver.swift in Sources */,
-				4BE728FD1AAB5C75007FF459 /* Box.swift in Sources */,
 				4BE729011AAB5C75007FF459 /* Node.swift in Sources */,
 				4BE728C11AA938DE007FF459 /* ViewController.swift in Sources */,
 				4BE728FE1AAB5C75007FF459 /* Direction.swift in Sources */,

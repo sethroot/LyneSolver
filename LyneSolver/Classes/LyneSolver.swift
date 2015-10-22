@@ -11,24 +11,6 @@ import Foundation
 
 class LyneSolver {
     
-    var directions:[DirModTriple] {
-        
-        func id(i:Int) -> Int {return i}
-        func inc(i:Int) -> Int {return i+1}
-        func dec(i:Int) -> Int {return i-1}
-        
-        return [
-            (Direction.Up, dec, id),
-            (Direction.Down, inc, id),
-            (Direction.Left, id, dec),
-            (Direction.Right, id, inc),
-            (Direction.UpLeft, dec, dec),
-            (Direction.UpRight, dec, inc),
-            (Direction.DownLeft, inc, dec),
-            (Direction.DownRight, inc, inc)
-        ]
-    }
-    
     func main() {
         solveBoard(board1);
         print("")

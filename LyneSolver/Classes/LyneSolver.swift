@@ -26,54 +26,53 @@ class LyneSolver {
         print("")
         
         // Find Address of Node.Start
-        if let startAddr = Node.Start.address(board) {
-            
-            // Initialize Matrix of Bools to track which nodes have been processed
-            let processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
-            
-            // Generate a RoseTree of Directions with Node.Start as the root
-            let trees:[RoseTree<Direction>] = treesForNode(board, addr:startAddr, processed:processed)
-            
-            // Flatten each tree and accumulate
-            var paths:[[Direction]] = []
-            for tree in trees {
-                paths += tree.flatten()
-            }
-            
-            print("All paths:")
-            for path in paths {
-                print(path)
-            }
-            print("")
-            
-            // Count nodes
-            var nodeCount:Int = 0;
-            for node in board.grid {
-                if (node == Node.Node || node == Node.End) {
-                    nodeCount++;
-                }
-            }
-            
-            // Filter paths that are not the correct length
-            let lengthFiltered = paths.filter {$0.count == nodeCount}
-            print("Filtered for length: ")
-            
-            for path in lengthFiltered {
-                print(path)
-            }
-            print("")
-            
-            // Filter paths that do not end on Node.End
-            let endAddress = Node.End.address(board)
-            let endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
-            print("Solutions: ")
-            
-            for path in endFiltered {
-                print(path)
-            }
-            
-        } else {
+        guard let startAddr = Node.Start.address(board) else {
             NSLog("Could not find starting node on the board")
+            return
+        }
+        
+        // Initialize Matrix of Bools to track which nodes have been processed
+        let processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
+        
+        // Generate a RoseTree of Directions with Node.Start as the root
+        let trees:[RoseTree<Direction>] = treesForNode(board, addr:startAddr, processed:processed)
+        
+        // Flatten each tree and accumulate
+        var paths:[[Direction]] = []
+        for tree in trees {
+            paths += tree.flatten()
+        }
+        
+        print("All paths:")
+        for path in paths {
+            print(path)
+        }
+        print("")
+        
+        // Count nodes
+        var nodeCount:Int = 0;
+        for node in board.grid {
+            if (node == Node.Node || node == Node.End) {
+                nodeCount++;
+            }
+        }
+        
+        // Filter paths that are not the correct length
+        let lengthFiltered = paths.filter {$0.count == nodeCount}
+        print("Filtered for length: ")
+        
+        for path in lengthFiltered {
+            print(path)
+        }
+        print("")
+        
+        // Filter paths that do not end on Node.End
+        let endAddress = Node.End.address(board)
+        let endFiltered = lengthFiltered.filter {self.addressAtPathEnd(board, dirs: $0) == endAddress}
+        print("Solutions: ")
+        
+        for path in endFiltered {
+            print(path)
         }
     }
     

@@ -99,8 +99,6 @@ class LyneSolver {
         return node != Node.Empty
     }
     
-    
-    
     func addressAtPathEnd(board:Board, dirs:[Direction]) -> Address? {
         guard var node = Node.Start.address(board) else {
             return nil

@@ -17,4 +17,16 @@ enum Node : String, CustomStringConvertible {
     var description: String {
         return self.rawValue
     }
+    
+    func address(board:Board) -> Address? {
+        for var i=0; i<board.rows; i++ {
+            for var j=0; j<board.columns; j++ {
+                if board[i,j] == self {
+                    return Address(row: i, col: j)
+                }
+            }
+        }
+        
+        return nil
+    }
 }

@@ -11,8 +11,4 @@ import Foundation
 typealias Board = Matrix<Node>
 typealias Processed = Matrix<Bool>
 typealias AddressMod = (Int -> Int)
-
-typealias DirTree = RoseTree<(Direction)>
-typealias DirMatrix = [[Direction]]
-typealias DirList = [Direction]
 typealias DirModTriple = (direction: Direction, modRow: AddressMod, modCol: AddressMod)

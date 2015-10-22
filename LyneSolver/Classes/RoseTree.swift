@@ -9,21 +9,23 @@
 import Foundation
 
 enum RoseTree<T> : CustomStringConvertible {
-    case Node (Box<T>, [Box<RoseTree<T>>])
+    indirect case Node (T, [RoseTree<T>])
     
     var description: String {
         var desc:String = ""
         switch self {
         case .Node(let val, let trees):
-            desc += "\(val.value)"
+            desc += "\(val)"
             desc += trees.count > 0 ? " " : ""
             for tree in trees {
-                desc += "[\(tree.value.description)]"
+                desc += "[\(tree.description)]"
             }
         }
         return desc
     }
     
+    // Flatten the tree to a 2 dimensional array of T, where each inner array
+    // contains the values from the root node to a unique leaf
     func flatten() -> [[T]] {
         var acc:[[T]] = []
         flattenHelper(self, acc: &acc)
@@ -34,24 +36,39 @@ enum RoseTree<T> : CustomStringConvertible {
         switch tree {
         case .Node(let val, let trees):
             
+            // Leaf case
             if trees.count == 0 {
-                return (nil, [val.value])
+                // Return the leaf value in an Array that will be used to collect all the values above it in the tree
+                return (nil, [val])
             }
             
+            // Tree case
             for tree in trees {
-                var acc2:[[T]] = [];
-                var (_, leaf) = flattenHelper(tree.value, acc:&acc2)
                 
-                if leaf != nil {
-                    leaf!.insert(val.value, atIndex: 0);
-                    acc2.insert(leaf!, atIndex: 0)
+                // Each tree may continue to branch, so create a new 2 dimensional accumulator
+                var treeAcc:[[T]] = [];
+                
+                // Recursively flatten the tree using the new accumulator
+                let (_, leaf) = flattenHelper(tree, acc:&treeAcc)
+                
+                // If the recursion produced a leaf
+                if var leaf = leaf {
+                    
+                    // Insert the value of this node at the 0 position
+                    leaf.insert(val, atIndex: 0)
+                    
+                    // Then add the leaf to the tree's accumulator
+                    treeAcc.insert(leaf, atIndex: 0)
                 } else {
-                    for (index, dir) in acc2.enumerate() {
-                        acc2[index].insert(val.value, atIndex: 0)
+                    
+                    // Otherwise add the value of this node to each subtree that was created
+                    for (index, _) in treeAcc.enumerate() {
+                        treeAcc[index].insert(val, atIndex: 0)
                     }
                 }
                 
-                acc += acc2
+                // Append the tree accumulator to the parameter accumulator
+                acc += treeAcc
             }
         }
         

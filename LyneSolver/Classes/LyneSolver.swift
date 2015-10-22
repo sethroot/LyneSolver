@@ -50,11 +50,13 @@ class LyneSolver {
             let processed:Processed = Matrix(rows: board.rows, columns: board.columns, repeatedValue: false)
             
             // Generate a RoseTree of Directions with Node.Start as the root
-            let trees:[Box<DirTree>] = treesForNode(board, address:startNode, processed:processed)
+            let trees:[RoseTree<Direction>] = treesForNode(board, addr:startNode, processed:processed)
             
             // Flatten each tree and accumulate
-            var paths:DirMatrix = []
-            trees.map {paths += $0.value.flatten()}
+            var paths:[[Direction]] = []
+            for tree in trees {
+                paths += tree.flatten()
+            }
             
             print("All paths:")
             for path in paths {
@@ -70,7 +72,7 @@ class LyneSolver {
                 }
             }
             
-            // Filter paths that are not the correct lenght
+            // Filter paths that are not the correct length
             let lengthFiltered = paths.filter {$0.count == nodeCount}
             print("Filtered for length: ")
             
@@ -89,35 +91,30 @@ class LyneSolver {
             }
             
         } else {
-            NSLog("Error! Could not find starting node on the board")
+            NSLog("Could not find starting node on the board")
         }
     }
     
-    func treesForNode(board:Board, address:Address, var processed:Processed) -> [Box<DirTree>] {
-        let (row, col) = (address.row, address.col)
-        processed[row, col] = true
+    func treesForNode(board:Board, addr:Address, var processed:Processed) -> [RoseTree<Direction>] {
+        processed[addr.row, addr.col] = true
         
-        let nodeExists = {(address:Address) -> Bool in
-            let (row, col) = (address.row, address.col)
-            let node = board.indexIsValidForRow(row, column:col) ? board[row, col] : Node.Empty
-            return node != Node.Empty
-        }
+        var trees:[RoseTree<Direction>] = []
         
-        func generatePaths(modRow:AddressMod, modCol:AddressMod) -> [Box<DirTree>]? {
-            let neighborNode:Address = address.translate(modRow, modCol: modCol)
-            
-            return nodeExists(neighborNode) && !processed[neighborNode.row, neighborNode.col] ?
-                treesForNode(board, address: neighborNode, processed: processed) : nil;
-        }
-        
-        var trees:[Box<DirTree>] = []
         for (direction, modRow, modCol) in directions {
-            if let paths = generatePaths(modRow, modCol: modCol) {
-                trees.append(Box(RoseTree.Node(Box(direction), paths)))
+            let neighborNode = addr.translate(modRow, modCol: modCol)
+            
+            if nodeExists(board, addr: neighborNode) && !processed[neighborNode.row, neighborNode.col] {
+                trees.append(RoseTree.Node(direction, treesForNode(board, addr: neighborNode, processed: processed)))
             }
         }
         
         return trees
+    }
+    
+    func nodeExists(board:Board, addr:Address) -> Bool {
+        let (row, col) = (addr.row, addr.col)
+        let node = board.indexIsValidForRow(row, column:col) ? board[row, col] : Node.Empty
+        return node != Node.Empty
     }
     
     func addressessForNode(board:Board, node:Node) -> Address? {
@@ -133,7 +130,7 @@ class LyneSolver {
         return nil
     }
     
-    func addressAtPathEnd(board:Board, dirs:DirList) -> Address? {
+    func addressAtPathEnd(board:Board, dirs:[Direction]) -> Address? {
         var node:Address;
         
         if let startNode:Address = addressessForNode(board, node: Node.Start) {
